@@ -8,8 +8,8 @@ The intention behind this project is to explore and learn new techniques by cust
 
 ## Features
 
-- Customization: The project showcases personalized modifications made to the original card design.
-- Aesthetic Integration: Efforts have been made to ensure that the customized components harmonize with the overall visual style.
+- Customization: The project showcases personalized modifications made to the original card design, this includes making the starting button much smaller and having it grow.
+- Aesthetic Integration: The card has been updated to fit with my personal brand's theme.
 
 ## Getting Started
 
