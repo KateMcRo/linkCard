@@ -1,6 +1,7 @@
 # Link Card Customization
 
 This project is based off of the [Card by Smit-Prajapati](https://uiverse.io/Smit-Prajapati/massive-insect-5) available from [UIverse](https://uiverse.io/)
+
 You can view my customized version [here](https://katemcro.github.io/linkCard/).
 
 ## Purpose
