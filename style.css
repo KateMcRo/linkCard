@@ -1,9 +1,25 @@
+:root {
+    --wht: #F5F5EF;
+    --lt: #E1CEBF;
+    --mid: #B97141;
+    --org: #FF6D5F;
+    --mag: #A4377A;
+    --drk: #070605;
+    --font1: 'TT Drugs Trl Cnd', sans-serif;
+    --font2: 'Lemon Tuesday', sans-serif;
+    --font3: 'Arial Narrow', sans-serif;
+  }
+
+  body {
+    background-color: var(--drk);
+  }
+
 .card {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 25px;
+    height: 25px;
     background: lightgrey;
-    border-radius: 30px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: all 1s ease-in-out;
@@ -12,22 +28,26 @@
   .background {
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 100% 107%, #ff89cc 0%, #9cb8ec 30%, #00ffee 60%, #62c2fe 100%);
+    background: radial-gradient(circle at 100% 107%, var(--org) 0%, var(--org) 30%, var(--mag) 60%, var(--drk) 100%);
   }
   
   .logo {
     position: absolute;
     right: 50%;
-    bottom: 50%;
+    bottom: 45%; 
     transform: translate(50%, 50%);
     transition: all 0.6s ease-in-out;
   }
-  
-  .logo .logo-svg {
-    fill: white;
-    width: 30px;
-    height: 30px;
-  }
+
+  .logo .logo-link {
+      color: var(--wht);
+      transition: all 0.5s ease-in-out;
+    }
+
+    .card:hover .logo .logo-link {
+      width: 30px;
+      height: 30px;
+    }
   
   .icon {
     display: inline-block;
@@ -35,8 +55,8 @@
     height: 20px;
   }
   
-  .icon .svg {
-    fill: rgba(255, 255, 255, 0.797);
+  .icon .link {
+    color: var(--wht);
     width: 100%;
     transition: all 0.5s ease-in-out;
   }
@@ -63,78 +83,73 @@
     transition: all 0.5s ease-in-out;
   }
   
-  .box:hover .svg {
-    fill: white;
+  .box:hover .link {
+    color: white;
   }
   
   .box1 {
-    width: 70%;
-    height: 70%;
-    bottom: -70%;
-    left: -70%;
+    width: 60%;
+    height: 60%;
+    bottom: -150%;
+    left: -150%;
   }
   
   .box1::before {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #ff53d4 60%, #62c2fe 90%);
+    background: radial-gradient(circle at 30% 107%, var(--org) 0%, var(--mid) 5%, var(--org) 60%, var(--mag) 90%);
   }
   
   .box1:hover::before {
     opacity: 1;
   }
   
-  .box1:hover .icon .svg {
+  .box1:hover .icon .link {
     filter: drop-shadow(0 0 5px white);
   }
   
   .box2 {
-    width: 50%;
-    height: 50%;
-    bottom: -50%;
-    left: -50%;
+    width: 40%;
+    height: 40%;
+    bottom: -150%;
+    left: -150%;
     transition-delay: 0.2s;
   }
   
   .box2::before {
-    background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
+    background: radial-gradient(circle at 30% 107%, var(--mid) 0%, var(--org) 90%);
   }
   
   .box2:hover::before {
     opacity: 1;
   }
   
-  .box2:hover .icon .svg {
+  .box2:hover .icon .link {
     filter: drop-shadow(0 0 5px white);
   }
   
   .box3 {
-    width: 30%;
-    height: 30%;
-    bottom: -30%;
-    left: -30%;
+    width: 20%;
+    height: 20%;
+    bottom: -150%;
+    left: -150%;
     transition-delay: 0.4s;
   }
   
   .box3::before {
-    background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+    background: radial-gradient(circle at 30% 107%, var(--lt) 0%, var(--org) 90%);
   }
   
   .box3:hover::before {
     opacity: 1;
   }
   
-  .box3:hover .icon .svg {
+  .box3:hover .icon .link {
     filter: drop-shadow(0 0 5px white);
   }
   
-  .box4 {
-    width: 10%;
-    height: 10%;
-    bottom: -10%;
-    left: -10%;
-    transition-delay: 0.6s;
-  }
-  
+
   .card:hover {
+    width: 150px;
+    height: 150px;
     transform: scale(1.1);
   }
   
@@ -145,6 +160,6 @@
   
   .card:hover .logo {
     transform: translate(0, 0);
-    bottom: 20px;
-    right: 20px;
+    bottom: 10px;
+    right: 10px;
   }
